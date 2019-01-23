@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Марат Гайсин](https://up.htmlacademy.ru/htmlcss/24/user/792157).
-* Наставник: [Виктория Коваленко] (https://htmlacademy.ru/profile/id42638).
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
