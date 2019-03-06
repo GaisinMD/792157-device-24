@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body>
+
+  <header class="container">
+    <a class="main-logo">
+      <img src="img/main-logo.svg" alt="Логотип Device" width="163" height="35">
+    </a>
+
+    <div class="header-top">
+      <form class="form-search" action="#" method="GET">
+        <label class="visually-hidden" for="input-search">Поиск</label>
+        <input type="text" id="input-search" name="search" placeholder="Поиск по сайту">
+        <button class="button-form-search">Найти</button>
+      </form>
+      <ul class="menu-user">
+        <li class="user-login"><a href="#">Войти</a></li>
+        <li class="user-compare"><a href="#">Сравнить</a></li>
+        <li class="user-basket"><a href="">Корзина</a></li>
+      </ul>
+    </div>
+
+    <div class="header-bottom">
+      <ul class="menu-main">
+        <li class="main-catalog"><a href="#">Каталог</a>
+          <!-- выпадающее подменю Каталога -->
+          <section class="catalog-submenu container">
+            <h2 class="visually-hidden">Подменю Каталог</h2>
+            <ul class="submenu-column-1">
+              <li class="column-1-virtual"><a href="#">Виртуальная реальность</a></li>
+              <li class="column-1-monopods"><a href="catalog.html">Моноподы для сэлфи</a></li>
+              <li class="column-1-action-cam"><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="submenu-column-2">
+              <li class="column-2-fitness"><a href="#">Фитнесс-браслеты</a></li>
+              <li class="column-2-smart-watch"><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="submenu-column-3">
+              <li class="column-3-quadrocopter"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </section>
+        </li>
+        <li class="main-shipping"><a href="#">Доставка</a></li>
+        <li class="main-warranty"><a href="#">Гарантия</a></li>
+        <li class="main-contacts"><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Магазин Device</h1>
+    <!-- Контейнер для всего кроме фьючеров-->
+    <div class="container">
+      <!-- "Элементы управления слайдером" -->
+      <div class="slide-container">
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <!-- кнопки -->
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+
+        <!-- Слайд-1 -->
+        <section class="slide slide-1">
+          <h2 class="visually-hidden">Палка для селфи</h2>
+          <p class="slide-image-container">
+            <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+          </p>
+          <div class="slide-description">
+            <b class="slide-slogan">Делай селфи, как Бен Стиллер!</b>
+            <p class="slide-describe">Самая длинная палка для селфи доступна в нашем магазине.
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <a class="button button-slide" href="#">Подробнее</a>
+            <div class="slide-characteristic-block">
+              <p class="charcteristic-block">
+                <span class="characteristic-block-title">Длина палки</span>
+                <span class="characteristic-block-value">8,5 м</span>
+              </p>
+              <p class="charcteristic-block">
+                <span class="characteristic-block-title">Вес палки</span>
+                <span class="characteristic-block-value">5 кг</span>
+              </p>
+              <p class="charcteristic-block">
+                <span class="characteristic-block-title">Материал</span>
+                <span class="characteristic-block-value">Карбон</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Слайд-2 -->
+        <section class="slide slide-2">
+          <h2 class="visually-hidden">Умные часы</h2>
+          <p class="slide-image-container">
+            <img src="img/slider-2.png" width="345" height="485" alt="Умные часы">
+          </p>
+          <div class="slide-description">
+            <b class="slide-slogan">Худеем правильно!</b>
+            <p class="slide-describe">Мотивирующие фитнес-браслеты помогут найти в себе силы
+              не пропускать занятия и соблюдать диету.
+            </p>
+            <a class="button button-slide" href="#">Подробнее</a>
+            <div class="slide-characteristic-block">
+              <p class="charcteristic-block">
+                <span class="characteristic-block-title">Без подзарядки</span>
+                <span class="characteristic-block-value">48 часов</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Слайд-3 -->
+        <section class="slide slide-3">
+          <h2 class="visually-hidden">Квадрокоптер</h2>
+          <p class="slide-image-container">
+            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер!">
+          </p>
+          <div class="slide-description">
+            <b class="slide-slogan">Порхает как бабочка, жалит как пчела!</b>
+            <p class="slide-describe">Этот обычный, на первый взгляд, квадрокоптер оснащен
+              мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a class="button button-slide" href="#">Подробнее</a>
+            <div class="slide-characteristic-block">
+              <p class="charcteristic-block">
+                <span class="characteristic-block-title">Дальность полета</span>
+                <span class="characteristic-block-value">800 м</span>
+              </p>
+              <p class="charcteristic-block">
+                <span class="characteristic-block-title">Радиус поражения</span>
+                <span class="characteristic-block-value">50 м</span>
+              </p>              
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer></footer>
+
+</body>
+
 </html>

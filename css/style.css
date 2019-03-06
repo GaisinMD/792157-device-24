@@ -1,0 +1,129 @@
+/* font-family: "Open Sans", Arial, sans-serif; */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
+  min-width: 1200px;
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Стили хедера */
+header {
+  background-color: #f8e297;
+}
+
+/* Стили  верхней части хедера */
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-user {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+/* Стили нижней части хедера */
+.menu-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-catalog {
+  position: relative;
+}
+
+/* стили сабменю Каталога */
+.catalog-submenu {
+  position: absolute;
+  left: 0px;
+  display: none;
+  background-color: #f8e297;
+}
+
+.main-catalog:hover .catalog-submenu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Стили мейна */
+/* Стили слайдера */
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slide-2, .slide-3 {
+    display: none;
+}
+
+.slide-description {
+  width: 480px;
+}
+
+.slide-button {
+  display: block;
+}
+
+.slide-characteristic-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.charcteristic-block {
+  /* временно */
+  width: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
