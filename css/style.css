@@ -159,48 +159,23 @@ header {
   flex-wrap: wrap;
 }
 
-.contractors-item a{
+.contractors-item-link {
   display: block;
   padding: 0;
   margin: 0;
-  color: transparent;
-  width: 260px;
-  height: 100px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  transition: background-image 1s linear;
+  position: relative;
 }
 
-.contractors-item-1 a{
-  background-image: url("../img/logo-1.png");  
+.contractors-item-image {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 1s linear;
 }
 
-.contractors-item-1:hover a{
-  background-image: url("../img/logo-1-color.png");  
-}
-
-.contractors-item-2 a{
-  background-image: url("../img/logo-2.png");  
-}
-
-.contractors-item-2:hover a{
-  background-image: url("../img/logo-2-color.png");  
-}
-
-.contractors-item-3 a{
-  background-image: url("../img/logo-3.png");  
-}
-
-.contractors-item-3:hover a{
-  background-image: url("../img/logo-3-color.png");  
-}
-
-.contractors-item-4 a{
-  background-image: url("../img/logo-4.png");  
-}
-
-.contractors-item-4:hover a{
-  background-image: url("../img/logo-4-color.png");  
+.contractors-item-image:hover {  
+  opacity: 1;  
 }
 
 /* Стили секции о нас */
@@ -277,3 +252,70 @@ footer {
 .html-academy-logo path {
   fill: #ffc600;
 }
+
+
+
+/* Стили CATALOG.HTML */
+.page-shop-main {
+  background-color: #ebebeb;
+}
+
+/* Стили фильтров */
+.page-shop-filter {
+  display: inline-block;
+  vertical-align: top;
+
+  /* временно */
+  width: 250px;
+  /* временно */
+}
+
+.sort-products-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+}
+
+.page-shop-sort {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ebebeb;
+}
+
+.list-sort {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-sort-order {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-shop-goods {    
+}
+
+.product-item {
+  /* временно */
+  width: 360px;
+  /* временно */
+}
+
+.list-products {
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* временно */
+  width: 900px;
+  /* временно */
+}
+
+.product-paginator-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ebebeb;
+}
+
+
+
+
