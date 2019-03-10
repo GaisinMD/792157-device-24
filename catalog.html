@@ -43,17 +43,17 @@
           <!-- выпадающее подменю Каталога -->
           <section class="catalog-submenu container">
             <h2 class="visually-hidden">Подменю Каталог</h2>
-            <ul class="submenu-column-1">
-              <li class="column-1-virtual"><a href="#">Виртуальная реальность</a></li>
-              <li class="column-1-monopods"><a href="catalog.html">Моноподы для сэлфи</a></li>
-              <li class="column-1-action-cam"><a href="#">Экшн-камеры</a></li>
+            <ul class="submenu-column">
+              <li class="column-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="column-item"><a href="catalog.html">Моноподы для сэлфи</a></li>
+              <li class="column-item"><a href="#">Экшн-камеры</a></li>
             </ul>
-            <ul class="submenu-column-2">
-              <li class="column-2-fitness"><a href="#">Фитнесс-браслеты</a></li>
-              <li class="column-2-smart-watch"><a href="#">Умные часы</a></li>
+            <ul class="submenu-column">
+              <li class="column-item"><a href="#">Фитнесс-браслеты</a></li>
+              <li class="column-item"><a href="#">Умные часы</a></li>
             </ul>
-            <ul class="submenu-column-3">
-              <li class="column-3-quadrocopter"><a href="#">Квадрокоптеры</a></li>
+            <ul class="submenu-column">
+              <li class="column-item"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </section>
         </li>
@@ -84,13 +84,13 @@
             </div>
             <div class="slider-field">
               <div class="slider"></div>
-              <div class="first-circle">
+              <div class="circle-left">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
                   <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
                   <circle fill="#FFF" cx="10" cy="10" r="10" />
                   <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg>
               </div>
-              <div class="second-circle">
+              <div class="circle-right">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
                   <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
                   <circle fill="#FFF" cx="10" cy="10" r="10" />
@@ -148,26 +148,21 @@
           <h2>Сортировка:</h2>
           <ul class="list-sort">
             <li class="list-sort-item">
-              <input class="visually-hidden" type="radio" name="sort-item" value="sort-price" id="sort-price">
-              <label for="sort-price">По цене</label>
+              <a class="sort-price" href="#">По цене</a>
             </li>
             <li class="list-sort-item">
-              <input class="visually-hidden" type="radio" name="sort-item" value="sort-type" id="sort-type">
-              <label for="sort-type">По типу</label>
+              <a class="sort-type" href="#">По типу</a>
             </li>
             <li class="list-sort-item">
-              <input class="visually-hidden" type="radio" name="sort-item" value="sort-popular" id="sort-popular">
-              <label for="sort-popular">По популярности</label>
+              <a class="sort-popular" href="#">По популярности</a>
             </li>
           </ul>
           <ul class="list-sort-order">
             <li class="list-sort-order-item">
-              <input class="visually-hidden" type="radio" name="sort-order-item" value="sort-high" id="sort-high">
-              <label for="sort-high">По возрастанию</label>
+              <a class="sort-high" href="#">По возрастанию</a>
             </li>
             <li class="list-sort-order-item">
-              <input class="visually-hidden" type="radio" name="sort-order-item" value="sort-low" id="sort-low">
-              <label for="sort-low">По убыванию</label>
+              <a class="sort-low" href="#">По убыванию</a>
             </li>
           </ul>
         </section>
@@ -258,9 +253,9 @@
       <!-- Средняя часть футера -->
       <div class="footer-middle-side">
         <ul class="footer-feature-list">
-          <li class="footer-feature-item">Доставка</li>
-          <li class="footer-feature-item">Гарантия</li>
-          <li class="footer-feature-item">Контакты</li>
+            <li class="footer-feature-item"><a href="#">Доставка</a></li>
+            <li class="footer-feature-item"><a href="#">Гарантия</a></li>
+            <li class="footer-feature-item"><a href="#">Контакты</a></li>
         </ul>
 
         <ul class="footer-social-list">

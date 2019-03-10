@@ -28,7 +28,7 @@
       <form class="form-search" action="#" method="GET">
         <label class="visually-hidden" for="input-search">Поиск</label>
         <input type="text" id="input-search" name="search" placeholder="Поиск по сайту">
-        <button class="button-form-search">Найти</button>
+        <button class="button-form-search" type="submit">Найти</button>
       </form>
       <ul class="header-menu-user">
         <li class="header-user header-user-login"><a href="#">Войти</a></li>
@@ -43,17 +43,17 @@
           <!-- выпадающее подменю Каталога -->
           <section class="catalog-submenu container">
             <h2 class="visually-hidden">Подменю Каталог</h2>
-            <ul class="submenu-column-1">
-              <li class="column-1-virtual"><a href="#">Виртуальная реальность</a></li>
-              <li class="column-1-monopods"><a href="catalog.html">Моноподы для сэлфи</a></li>
-              <li class="column-1-action-cam"><a href="#">Экшн-камеры</a></li>
+            <ul class="submenu-column">
+              <li class="column-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="column-item"><a href="catalog.html">Моноподы для сэлфи</a></li>
+              <li class="column-item"><a href="#">Экшн-камеры</a></li>
             </ul>
-            <ul class="submenu-column-2">
-              <li class="column-2-fitness"><a href="#">Фитнесс-браслеты</a></li>
-              <li class="column-2-smart-watch"><a href="#">Умные часы</a></li>
+            <ul class="submenu-column">
+              <li class="column-item"><a href="#">Фитнесс-браслеты</a></li>
+              <li class="column-item"><a href="#">Умные часы</a></li>
             </ul>
-            <ul class="submenu-column-3">
-              <li class="column-3-quadrocopter"><a href="#">Квадрокоптеры</a></li>
+            <ul class="submenu-column">
+              <li class="column-item"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </section>
         </li>
@@ -260,7 +260,7 @@
               <img class="contractors-item-image" src="img/logo-3-color.png" width="260" height="100" alt="GoPro">
             </a>
           </li>
-          <li class="contractors-item contractors-item-4">
+          <li class="contractors-item">
             <a class="contractors-item-link" href="#">
               <img class="contractors-item-image" src="img/logo-4-color.png" width="260" height="100" alt="VIVE">
             </a>
@@ -293,7 +293,7 @@
           <p class="contacts-content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
             работоспособность покупки. Всякое бывает.
           </p>
-          <img src="img/map.jpg" alt="Наш адрес на карте" width="560" height="222">
+          <a class="contacts-map" href="#"><img src="img/map.jpg" alt="Наш адрес на карте" width="560" height="222"></a>
           <a class="button contacts-button" href="#">Напишите нам</a>
         </section>
 
@@ -327,9 +327,9 @@
       <!-- Средняя часть футера -->
       <div class="footer-middle-side">
         <ul class="footer-feature-list">
-          <li class="footer-feature-item">Доставка</li>
-          <li class="footer-feature-item">Гарантия</li>
-          <li class="footer-feature-item">Контакты</li>
+          <li class="footer-feature-item"><a href="#">Доставка</a></li>
+          <li class="footer-feature-item"><a href="#">Гарантия</a></li>
+          <li class="footer-feature-item"><a href="#">Контакты</a></li>
         </ul>
 
         <ul class="footer-social-list">
