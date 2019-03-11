@@ -193,6 +193,14 @@ header {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.header-user a:hover::before {
+  opacity: 0.6;
+}
+
+.header-user a:active::before {
+  opacity: 0.3;
+}
+
 .header-user-login a {
   position: relative;
   margin-right: 218px;
