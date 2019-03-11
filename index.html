@@ -28,7 +28,7 @@
       <form class="form-search" action="#" method="GET">
         <label class="visually-hidden" for="input-search">Поиск</label>
         <input type="text" id="input-search" name="search" placeholder="Поиск по сайту">
-        <button class="button-form-search" type="submit">Найти</button>
+        <button class="form-search-button" type="submit">Найти</button>
       </form>
       <ul class="header-menu-user">
         <li class="header-user header-user-login"><a href="#">Войти</a></li>
@@ -247,8 +247,14 @@
         <ul class="contractors-list">
           <li class="contractors-item">
             <a class="contractors-item-link" href="#">
-              <img src="img/logo-1.png" width="260" height="100" alt="DJI">
-              <img class="contractors-item-image" src="img/logo-1-color.png" width="260" height="100" alt="DJI">
+              <!-- <img src="img/logo-1.png" width="260" height="100" alt="DJI"> -->
+              <!-- <img class="contractors-item-image" src="img/logo-1-color.png" width="260" height="100" alt="DJI"> -->
+              <svg class="contractors-item-image">
+                  <filter id="filter1" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+                      <feColorMatrix type="saturate" values="0" in="SourceGraphic" result="colormatrix"/>
+                  </filter>
+                <image x="0" y="0" width="260" height="100" xlink:href="img/logo-1-color.png" filter="url(#filter1)"/>
+              </svg>
             </a>
           </li>
           <li class="contractors-item">

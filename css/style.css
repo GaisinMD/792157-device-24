@@ -51,10 +51,8 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 /* Стили хедера */
@@ -66,12 +64,105 @@ header {
 .header-top {
   display: flex;
   flex-wrap: wrap;
+
+  font-family: OpenSans, Arial, sans-serif;
+  color: #000000;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.main-logo {
+  display: block;
+  width: 163px;
+  height: 56px;
+  padding-top: 21px;
+  margin-left: 59px;
+  margin-bottom: 28px;
+}
+
+.form-search {
+  position: relative;
+  margin-left: 59px;
+}
+
+.form-search input {
+  padding: 0;
+  padding-left: 40px;
+  width: 440px;
+  padding-right: 100px;
+  border: none;
+  background-color: #f8e297;
+}
+
+.form-search::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 7px;
+  left: 2px;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.form-search input::placeholder {  
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-search input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-search input:active ~.form-search-button,
+.form-search input:focus ~.form-search-button {
+  display: block;  
+}
+
+.form-search-button {
+  display: none;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 85px;
+  min-height: 49px;
+  border: 2px solid #000000;
+  background-color: #f8e297;
+}
+
+.form-search-button::after {    
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 83px;
+  width: 355px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.form-search-button:hover,
+.form-search-button:focus {
+  display: block;  
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.form-search-button:active {
+  display: block;  
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .header-menu-user {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
+  /* width: 540px; */
+  margin-left: auto;
 }
 
 /* Стили нижней части хедера */
@@ -169,22 +260,26 @@ header {
 }
 
 .contractors-item-image {
-  position: absolute;
-  opacity: 0;
+  /* position: absolute; */
+  opacity: 0.2;
   top: 0;
   left: 0;
-  transition: opacity 1s linear;
+  transition: opacity 0.5s linear;
 
-  /* transition: filter 0.5s linear; */
+
   /* filter: grayscale(1) opacity(0.2); */
 }
 
 
-.contractors-item-image:hover {  
-  opacity: 1;  
-
+.contractors-item-image:hover {
+  opacity: 1;
   /* filter: none; */
 }
+
+.contractors-item-image:hover image {
+  filter: none;
+}
+
 
 /* Стили секции о нас */
 .about-us {
