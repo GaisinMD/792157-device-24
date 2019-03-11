@@ -12,7 +12,7 @@
 
 <body>
   <header class="container">
-    <a class="main-logo">
+    <a class="main-logo" href="index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
         <defs>
           <style>
@@ -25,44 +25,44 @@
     </a>
 
     <div class="header-top">
-      <form class="form-search" action="#" method="GET">
-        <label class="visually-hidden" for="input-search">Поиск</label>
-        <input type="text" id="input-search" name="search" placeholder="Поиск по сайту">
-        <button class="button-form-search">Найти</button>
-      </form>
-      <ul class="header-menu-user">
-        <li class="header-user header-user-login"><a href="#">Войти</a></li>
-        <li class="header-user header-user-compare"><a href="#">Сравнить</a></li>
-        <li class="header-user header-user-basket"><a href="">Корзина</a></li>
-      </ul>
-    </div>
-
-    <div class="header-bottom">
-      <ul class="menu-main">
-        <li class="main-catalog"><a href="#">Каталог</a>
-          <!-- выпадающее подменю Каталога -->
-          <section class="catalog-submenu container">
-            <h2 class="visually-hidden">Подменю Каталог</h2>
-            <ul class="submenu-column">
-              <li class="column-item"><a href="#">Виртуальная реальность</a></li>
-              <li class="column-item"><a href="catalog.html">Моноподы для сэлфи</a></li>
-              <li class="column-item"><a href="#">Экшн-камеры</a></li>
-            </ul>
-            <ul class="submenu-column">
-              <li class="column-item"><a href="#">Фитнесс-браслеты</a></li>
-              <li class="column-item"><a href="#">Умные часы</a></li>
-            </ul>
-            <ul class="submenu-column">
-              <li class="column-item"><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </section>
-        </li>
-        <li class="main-shipping"><a href="#">Доставка</a></li>
-        <li class="main-warranty"><a href="#">Гарантия</a></li>
-        <li class="main-contacts"><a href="#">Контакты</a></li>
-      </ul>
-    </div>
-  </header>
+        <form class="form-search" action="#" method="GET">
+          <label class="visually-hidden" for="input-search">Поиск</label>
+          <input type="text" id="input-search" name="search" placeholder="Поиск по сайту">
+          <button class="form-search-button" type="submit">Найти</button>
+        </form>
+        <ul class="header-menu-user">
+          <li class="header-user header-user-login"><a href="#">Войти</a></li>
+          <li class="header-user header-user-compare"><a href="#">Сравнить</a></li>
+          <li class="header-user header-user-basket"><a href="">Корзина</a></li>
+        </ul>
+      </div>
+  
+      <div class="header-bottom">
+        <ul class="menu-main">
+          <li class="main-item main-catalog"><a class="main-item-link" href="#">Каталог товаров</a>
+            <!-- выпадающее подменю Каталога -->
+            <section class="catalog-submenu container">
+              <h2 class="visually-hidden">Подменю Каталог</h2>
+              <ul class="submenu-column">
+                <li class="column-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="column-item column-item-active"><a>Моноподы для сэлфи</a></li>
+                <li class="column-item"><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="submenu-column">
+                <li class="column-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="column-item"><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="submenu-column">
+                <li class="column-item"><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </section>
+          </li>
+          <li class="main-item main-shipping"><a class="main-item-link" href="#">Доставка</a></li>
+          <li class="main-item main-warranty"><a class="main-item-link" href="#">Гарантия</a></li>
+          <li class="main-item main-contacts"><a class="main-item-link" href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
 
 
   <main class="page-shop-main">
