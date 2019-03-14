@@ -484,8 +484,8 @@ header {
 .main-slide {
   position: relative;
   padding-left: 36px;
-  padding-bottom: 106px;
-  background-image: linear-gradient(#f8e297 110px, #ffffff 110px);
+  padding-bottom: 92px;
+  background-image: linear-gradient(#f8e297 110px, #ffffff 110px);  
 }
 
 .main-slide::before {
@@ -510,7 +510,7 @@ header {
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;  
-  letter-spacing: 1.8px;
+  letter-spacing: 1.8px;  
 }
 
 .main-slide-1::after {
@@ -643,10 +643,72 @@ header {
 }
 
 /* Стили популярных товаров */
+
 .popular-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0px;
+  padding-bottom: 85px;
+  list-style: none;
 }
+
+.popular-item-content {
+  text-decoration: none;
+  color: #000000;
+}
+
+.popular-list p {
+  margin: 0;
+  width: 160px;
+
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;  
+  letter-spacing: 0.2px;
+}
+
+.popular-item {
+  padding-right: 40px;
+}
+
+.popular-item:nth-child(6n) {
+  padding-right: 0px;
+}
+
+.popular-item-image-container {
+  width: 160px;
+  height: 160px;  
+  background-color: #f8e297;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.popular-item-image-container img{  
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.popular-item:nth-child(2) img{  
+  align-self: flex-end;
+}
+
+.popular-item:hover .popular-item-image-container,
+.popular-item-content:focus .popular-item-image-container {
+  background-color: #f0c52e;
+}
+
+.popular-item:active img,
+.popular-item:active p {
+  opacity: 0.3;
+}
+
+
+
 
 /* Стили фьючеров */
 .features-container {
