@@ -174,7 +174,7 @@
               <div class="popular-item-image-container">
                 <img src="img/popular-2.svg" alt="Моноподы для сеолфи" width="86" height="117">
               </div>
-              <p>Моноподы </br> для селфи</p>
+              <p>Моноподы <br> для селфи</p>
             </a>
           </li>
           <li class="popular-item">
@@ -223,26 +223,26 @@
         <input class="visually-hidden" type="radio" id="feature-3" name="features-toggle">
         <!-- кнопки -->
         <div class="features-slider-controls">
-          <label class="features-slider-controls-item features-slider-controls-item-1" for="feature-1">Доставка</label>
-          <label class="features-slider-controls-item features-slider-controls-item-2" for="feature-2">Гарантия</label>
-          <label class="features-slider-controls-item features-slider-controls-item-3" for="feature-3">Кредит</label>
+          <label class="features-slider-controls-item button" for="feature-1">Доставка</label>
+          <label class="features-slider-controls-item button" for="feature-2">Гарантия</label>
+          <label class="features-slider-controls-item button" for="feature-3">Кредит</label>
         </div>
 
-        <article class="feature-slide feature-slide-1">
+        <article class="feature-slide feature-slide-1" id="feature-slide-1">
           <h3 class="feature-slide-header">Доставка</h3>
           <p class="feature-slide-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
             бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </article>
 
-        <article class="feature-slide feature-slide-2">
+        <article class="feature-slide feature-slide-2" id="feature-slide-2">
           <h3 class="feature-slide-header">Гарантия</h3>
           <p class="feature-slide-content">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+            переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.
           </p>
         </article>
 
-        <article class="feature-slide feature-slide-3">
+        <article class="feature-slide feature-slide-3" id="feature-slide-3">
           <h3 class="feature-slide-header">Кредит</h3>
           <p class="feature-slide-content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
             наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
@@ -259,15 +259,16 @@
         <ul class="contractors-list">
           <li class="contractors-item">
             <a class="contractors-item-link" href="#">
-              <!-- <img src="img/logo-1.png" width="260" height="100" alt="DJI"> -->
-              <!-- <img class="contractors-item-image" src="img/logo-1-color.png" width="260" height="100" alt="DJI"> -->
-              <svg class="contractors-item-image">
-                <filter id="filter1" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse"
-                  color-interpolation-filters="linearRGB">
-                  <feColorMatrix type="saturate" values="0" in="SourceGraphic" result="colormatrix" />
-                </filter>
-                <image x="0" y="0" width="260" height="100" xlink:href="img/logo-1-color.png" filter="url(#filter1)" />
-              </svg>
+              <img src="img/logo-1.png" width="260" height="100" alt="DJI">
+              <img class="contractors-item-image" src="img/logo-1-color.png" width="260" height="100" alt="DJI">
+              <!-- ТУТ нАДО РАЗОБРАТЬСЯ. ПЕРЕДЕЛАЮ НА SVG ЕСЛИ УСПЕЮ -->
+              <!-- <svg class="contractors-item-image"> -->
+                <!-- <filter id="filter1" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" -->
+                  <!-- color-interpolation-filters="linearRGB"> -->
+                  <!-- <feColorMatrix type="saturate" values="0" in="SourceGraphic" result="colormatrix" /> -->
+                <!-- </filter> -->
+                <!-- <image x="0" y="0" width="260" height="100" xlink:href="img/logo-1-color.png" filter="url(#filter1)" /> -->
+              <!-- </svg> -->
             </a>
           </li>
           <li class="contractors-item">
