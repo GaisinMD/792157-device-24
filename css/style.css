@@ -126,7 +126,7 @@ header {
   height: 56px;
   padding-top: 21px;
   margin-left: 59px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .main-logo[href="index.html"] {
@@ -145,11 +145,12 @@ header {
 .form-search {
   position: relative;
   margin-left: 59px;
+  margin-right: 99px;
 }
 
 .form-search input {
   padding: 0;
-  padding-left: 40px;
+  padding-left: 38px;
   width: 440px;
   padding-right: 100px;
   border: none;
@@ -221,7 +222,6 @@ header {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
   list-style: none;
 }
 
@@ -249,7 +249,7 @@ header {
 
 .header-user-login a {
   margin-right: 218px;
-  padding-left: 27px;
+  padding-left: 26px;
 }
 
 .header-user-login a::before {
@@ -257,7 +257,7 @@ header {
   position: absolute;
   height: 13px;
   width: 12px;
-  top: 2px;
+  top: 3px;
   left: 2px;
   background-image: url("../img/user.svg");
   background-repeat: no-repeat;
@@ -274,7 +274,7 @@ header {
   position: absolute;
   height: 10px;
   width: 10px;
-  top: 3px;
+  top: 6px;
   left: 1px;
   background-image: url("../img/compare.svg");
   background-repeat: no-repeat;
@@ -282,7 +282,6 @@ header {
 }
 
 .header-user-basket a {
-  margin-right: 66px;
   padding-left: 24px;
 }
 
@@ -291,7 +290,7 @@ header {
   position: absolute;
   height: 12px;
   width: 12px;
-  top: 3px;
+  top: 4px;
   left: 1px;
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
@@ -300,7 +299,7 @@ header {
 
 /* Стили нижней части хедера */
 .header-bottom {
-  padding-bottom: 53px;
+  padding-bottom: 54px;
 }
 
 .menu-main {
@@ -594,11 +593,11 @@ header {
 }
 
 .main-slide-1 .main-slide-describe {
-  width: 500px;
+  width: 490px;
 }
 
 .main-slide-button {
-  width: 220px;
+  width: 222px;
   margin-bottom: 50px;
 }
 
@@ -722,7 +721,7 @@ header {
 /* Стили фьючеров */
 .features-container {
   background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
-  margin-bottom: 89px;
+  margin-bottom: 91px;
 }
 
 .features {
@@ -846,13 +845,13 @@ header {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 0.2px;
-  width: 435px;
+  width: 437px;
   margin: 0px;
 }
 
 /* Стили поставщиков */
 .contractors {
-  margin-bottom: 93px;
+  margin-bottom: 90px;
 }
 
 .contractors-list {
@@ -896,7 +895,7 @@ header {
 
 /* Стили секции о нас */
 .about-us-contacts-container {
-  margin-bottom: 80px;
+  margin-bottom: 82px;
 }
 
 .about-us::before,
@@ -1003,6 +1002,11 @@ footer {
   color: #ffffff;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* стили левой колонки */
 .footer-left-side {
   position: relative;
@@ -1026,7 +1030,7 @@ footer {
 .footer-logo {
   display: block;
   cursor: pointer;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .footer-logo path {
@@ -1057,7 +1061,7 @@ footer {
 .footer-middle-side {
   display: inline-block;
   vertical-align: top;
-  padding-right: 2px;
+  padding-right: 35px;
 }
 
 .footer-feature-list {
@@ -1083,6 +1087,10 @@ footer {
   letter-spacing: 3.6px;
 
   margin-right: 33px;
+}
+
+.footer-feature-item:nth-child(3n) a {
+  margin-right: 0px;
 }
 
 .footer-feature-item:hover a,
@@ -1127,7 +1135,7 @@ footer {
 .footer-menu-user {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 49px;
+  padding-top: 48px;
   padding-left: 0px;
   padding-bottom: 21px;
   list-style: none;
