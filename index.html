@@ -297,7 +297,7 @@
         <!-- секция о нас -->
         <section class="about-us">
           <h2 class="about-us-header">О нас</h2>
-          <p class="about-us-content">Огромный выбор гаджетов не оставит равнодушным гика, <br>который есть в каждом из
+          <p class="about-us-content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
             нас.
           </p>
           <p class="about-us-content">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
@@ -414,7 +414,7 @@
         </p>
 
         <p class="html-academy-logo-container">
-          <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="html-academy-logo">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
               xml:space="preserve">
@@ -429,7 +429,7 @@
 
   <!-- модальные окна -->
   <!-- окно обратной связи -->
-  <div class="overlay-modal">
+  <div class="overlay-modal-feedback">
     <section class="modal modal-feedback-form">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="feedback-form" action="#" method="POST">
@@ -452,14 +452,16 @@
   </div>
 
   <!-- окно карты -->
-  <div class="overlay-modal">
-    <section class="modal modal-map">
+  <div class="overlay-modal-map">
+    <section id="yandex-map" class="modal modal-map">
       <h2 class="visually-hidden">Наш адрес на карте</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abf861e02b0bb2171bd9c7000a146a35dd6ae895066754b316e0d300af743b598&amp;source=constructor"
+        width="960" height="560"></iframe>
       <button type="button" class="map-modal-close ">Закрыть</button>
-
     </section>
   </div>
 
+  <script src="js/script.js"></script>  
 
 </body>
 
