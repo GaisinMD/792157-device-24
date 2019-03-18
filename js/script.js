@@ -37,17 +37,20 @@ window.addEventListener("keydown", function (evt) {
       message.classList.remove("feedback-item-invalid");
     }
   }
-});
-
-window.addEventListener("keydown", function (evt) {
   if (byname.value) {
-    byname.classList.remove("feedback-item-invalid");
+    if (byname.classList.contains("feedback-item-invalid")) {
+      byname.classList.remove("feedback-item-invalid");
+    }
   }
   if (userMail.value) {
-    userMail.classList.remove("feedback-item-invalid");
+    if (userMail.classList.contains("feedback-item-invalid")) {
+      userMail.classList.remove("feedback-item-invalid");
+    }
   }
   if (message.value) {
-    message.classList.remove("feedback-item-invalid");
+    if (message.classList.contains("feedback-item-invalid")) {
+      message.classList.remove("feedback-item-invalid");
+    }
   }
 });
 
