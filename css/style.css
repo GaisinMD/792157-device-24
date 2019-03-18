@@ -147,19 +147,12 @@ body {
 }
 
 .button:hover {
-  /* background: linear-gradient(#f0c52e 0px, #f0c52e 40px); */
-  animation: background 2s ease-in;
+  background: linear-gradient(#f0c52e 0px, #f0c52e 40px);
 }
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
-  background: linear-gradient(#ffffff 0px, #f0c52e 0px, #f0c52e 24px, #ffffff 24px);
-}
-
-@keyframes background {
-  100% {
-    background: #f0c52e;
-  }
+  background: linear-gradient(#f0c52e 0px, #f0c52e 40px);
 }
 
 /* Стили хедера */
@@ -939,11 +932,13 @@ header {
 }
 
 .contractors-item-image {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  opacity: 0.3;
   transition: opacity 0.5s linear;
+}
+
+.contractors-item-image: image {
+  filter: url(#filter1);
 }
 
 .contractors-item-image:hover {
@@ -1565,6 +1560,9 @@ footer {
   background-color: #ffffff;
   z-index: 1;
   animation: bounce 0.5s ease;
+  background-image: url("../img/mapDevice.jpeg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .modal-map iframe {
