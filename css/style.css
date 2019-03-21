@@ -780,7 +780,7 @@ header {
 /* Стили фьючеров */
 .features-container {
   background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
-  margin-bottom: 91px;
+  margin-bottom: 94px;
 }
 
 .features {
@@ -908,7 +908,7 @@ header {
 
 /* Стили поставщиков */
 .contractors {
-  margin-bottom: 90px;
+  margin-bottom: 89px;
 }
 
 .contractors-list {
@@ -1057,33 +1057,23 @@ footer {
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 /* стили левой колонки */
-.footer-left-side {
+.footer-top-side {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 65px;
-  padding-bottom: 165px;
-  padding-right: 159px;
-}
-
-.footer-left-side::before {
-  position: absolute;
-  content: "";
-  width: 80px;
-  height: 7px;
-  background: #ffc600;
-  bottom: 82px;
-  left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 63px;
 }
 
 .footer-logo {
   display: block;
   cursor: pointer;
+  margin-top: 2px;
   margin-bottom: 26px;
 }
 
@@ -1100,92 +1090,6 @@ footer {
   fill: rgba(255, 198, 0, 0.3);
 }
 
-.footer-address {
-  margin: 0;
-  font-family: OpenSans, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-}
-
-/* стили средней колонки */
-.footer-middle-side {
-  display: inline-block;
-  vertical-align: top;
-  padding-right: 35px;
-}
-
-.footer-feature-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 121px;
-  padding-bottom: 48px;
-}
-
-.footer-feature-item a {
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  font-family: Gilroy, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: 3.6px;
-
-  margin-right: 33px;
-}
-
-.footer-feature-item:nth-child(3n) a {
-  margin-right: 0px;
-}
-
-.footer-feature-item:hover a,
-.footer-feature-item:focus a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-feature-item:active a {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-social-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  padding-left: 140px;
-}
-
-.footer-social-item {
-  padding-right: 23px;
-}
-
-.footer-social-item-link:hover path,
-.footer-social-item-link:hover rect,
-.footer-social-item-link:focus path,
-.footer-social-item-link:focus rect {
-  fill: rgba(255, 255, 255, 0.6);
-}
-
-.footer-social-item-link:active path,
-.footer-social-item-link:active rect {
-  fill: rgba(255, 255, 255, 0.1);
-}
-
-/* стили правой колонки */
-.footer-right-side {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .footer-menu-user {
   display: flex;
   flex-wrap: wrap;
@@ -1193,6 +1097,8 @@ footer {
   padding-left: 0px;
   padding-bottom: 21px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-user a {
@@ -1234,7 +1140,7 @@ footer {
   position: absolute;
   height: 13px;
   width: 12px;
-  top: 2px;
+  top: 3px;
   left: 2px;
   background-image: url("../img/user-marygold.svg");
   background-repeat: no-repeat;
@@ -1251,8 +1157,8 @@ footer {
   position: absolute;
   height: 10px;
   width: 10px;
-  top: 3px;
-  left: 1px;
+  top: 5px;
+  left: 0px;
   background-image: url("../img/compare-marygold.svg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -1268,16 +1174,75 @@ footer {
   position: absolute;
   height: 12px;
   width: 12px;
-  top: 3px;
-  left: 1px;
+  top: 4px;
+  left: 0px;
   background-image: url("../img/cart-marygold.svg");
   background-repeat: no-repeat;
   background-position: center top;
 }
 
+/* стили средней части */
+.footer-middle-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-address {
+  margin: 0;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+
+  margin-right: 163px;
+}
+
+.footer-feature-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7px;
+  margin-bottom: 13px;
+  padding-top: 0px;
+  padding-bottom: 48px;
+}
+
+.footer-feature-item a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 3.6px;
+
+  margin-right: 33px;
+}
+
+.footer-feature-item:nth-child(3n) a {
+  margin-right: 0px;
+}
+
+.footer-feature-item:hover a,
+.footer-feature-item:focus a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-feature-item:active a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer-phone {
-  text-align: right;
-  padding-bottom: 45px;
+  margin-left: auto;
+  margin-top: 0;
 }
 
 .footer-phone a {
@@ -1293,8 +1258,53 @@ footer {
   letter-spacing: normal;
 }
 
+/* стили нижней части колонки */
+.footer-bottom-side {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.footer-bottom-side::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background: #ffc600;
+  bottom: 98px;
+  left: 0px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 1px;
+  margin-left: 509px;
+}
+
+.footer-social-item {
+  padding-right: 23px;
+}
+
+.footer-social-item-link:hover path,
+.footer-social-item-link:hover rect,
+.footer-social-item-link:focus path,
+.footer-social-item-link:focus rect {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social-item-link:active path,
+.footer-social-item-link:active rect {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
 .html-academy-logo-container {
-  text-align: right;
+  margin-top: 0px;
+  margin-left: auto;
 }
 
 .html-academy-logo path {
@@ -1739,7 +1749,7 @@ footer {
   content: "";
   width: 23px;
   height: 23px;
-  background-image: url("../img/checkboxOff.svg");
+  background-image: url("../img/checkboxOff.png");
   background-repeat: no-repeat;
   background-position: center top;
   left: -40px;
@@ -1748,7 +1758,7 @@ footer {
 
 .list-filter-color-item input:checked+label::before {
   width: 27px;
-  background-image: url("../img/checkboxOn.svg");
+  background-image: url("../img/checkboxOn.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -1759,13 +1769,13 @@ footer {
 
 .list-filter-color-item:active:not([checked]) label::before {
   opacity: 1;
-  background-image: url("../img/checkboxOn.svg");
+  background-image: url("../img/checkboxOn.png");
   width: 27px;
 }
 
 .list-filter-color-item:active input:checked+label::before {
   opacity: 1;
-  background-image: url("../img/checkboxOff.svg");
+  background-image: url("../img/checkboxOff.png");
   width: 23px;
 }
 
@@ -1803,8 +1813,8 @@ footer {
   position: absolute;
   content: "";
   width: 25px;
-  height: 25px;
-  background-image: url("../img/radioOff.svg");
+  height: 28px;
+  background-image: url("../img/radioOff.png");
   background-repeat: no-repeat;
   background-position: center top;
   left: 57px;
@@ -1812,7 +1822,7 @@ footer {
 }
 
 .list-filter-bluetooth-item input:checked+label::before {
-  background-image: url("../img/radioOn.svg");
+  background-image: url("../img/radioOn.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -1823,12 +1833,12 @@ footer {
 
 .list-filter-bluetooth-item:active:not([checked]) label::before {
   opacity: 1;
-  background-image: url("../img/radioOn.svg");
+  background-image: url("../img/radioOn.png");
 }
 
 .list-filter-bluetooth-item:active input:checked+label::before {
   opacity: 1;
-  background-image: url("../img/radioOff.svg");
+  background-image: url("../img/radioOff.png");
 }
 
 .list-filter-bluetooth-item input:disabled+label::before,
@@ -2088,7 +2098,7 @@ footer {
   position: absolute;
   height: 13px;
   width: 12px;
-  top: 3px;
+  top: 4px;
   left: 2px;
   background-image: url("../img/user-marygold.svg");
   background-repeat: no-repeat;
@@ -2096,7 +2106,7 @@ footer {
 }
 
 .footer-user-login-active .footer-user-logoff {
-  margin-right: 64px;
+  margin-right: 42px;
   color: rgba(255, 255, 255, 0.3);
 }
 
