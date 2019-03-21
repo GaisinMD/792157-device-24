@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-  <header class="container">
+  <header class="main-header container">
     <a class="main-logo" href="index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
         <defs>
@@ -74,7 +73,6 @@
         <ul class="shop-menu-list">
           <li class="shop-menu-item"><a href="index.html">Главная</a></li>
           <li class="shop-menu-item"><a href="#">Каталог товаров</a></li>
-          <!-- Текущий  элемент меню-->
           <li class="shop-menu-item shop-menu-item-current">Моноподы для селфи</li>
         </ul>
       </nav>
@@ -257,15 +255,13 @@
             </ul>
 
             <!-- Пагинатор -->
-            <div class="paginator-wrapper">
-              <ul class="product-paginator-list">
-                <li class="paginator-item paginator-item-direction paginator-item-direction-back"><a>Назад</a></li>
-                <li class="paginator-item paginator-item-current"><a>1</a></li>
-                <li class="paginator-item"><a href="#">2</a></li>
-                <li class="paginator-item"><a href="#">3</a></li>
-                <li class="paginator-item paginator-item-direction paginator-item-direction-forward"><a href="#">Вперед</a></li>
-              </ul>
-            </div>
+            <ul class="product-paginator-list">
+              <li class="paginator-item paginator-item-direction paginator-item-direction-back"><a>Назад</a></li>
+              <li class="paginator-item paginator-item-current"><a>1</a></li>
+              <li class="paginator-item"><a href="#">2</a></li>
+              <li class="paginator-item"><a href="#">3</a></li>
+              <li class="paginator-item paginator-item-direction paginator-item-direction-forward"><a href="#">Вперед</a></li>
+            </ul>
           </section>
         </div>
 
@@ -273,7 +269,7 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <div class="footer-container container">
       <!-- Верхняя часть футера -->
       <div class="footer-top-side">
@@ -309,9 +305,7 @@
           <li class="footer-feature-item"><a href="#">Гарантия</a></li>
           <li class="footer-feature-item"><a href="#">Контакты</a></li>
         </ul>
-        <p class="footer-phone">
-          <a href="tel:+749549595">Тел.: +7 (495) 495-95-95</a>
-        </p>
+        <a class="footer-phone" href="tel:+749549595">Тел.: +7 (495) 495-95-95</a>
       </div>
 
       <!-- Нижняя часть футера -->

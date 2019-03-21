@@ -158,16 +158,13 @@ body {
   background: linear-gradient(#f0c52e 0px, #f0c52e 40px);
 }
 
-/* Стили хедера */
-header {
+.main-header {
   background-image: linear-gradient(#ffffff 40px, #f8e297 40px);
 }
 
-/* Стили  верхней части хедера */
 .header-top {
   display: flex;
   flex-wrap: wrap;
-
   font-family: OpenSans, Arial, sans-serif;
   color: #000000;
   font-size: 15px;
@@ -175,7 +172,6 @@ header {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-
   margin-bottom: 38px;
 }
 
@@ -356,7 +352,6 @@ header {
   background-position: center top;
 }
 
-/* Стили нижней части хедера */
 .header-bottom {
   padding-bottom: 54px;
 }
@@ -368,7 +363,6 @@ header {
   flex-wrap: wrap;
   margin-left: auto;
   list-style: none;
-
   font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -376,7 +370,6 @@ header {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 3.6px;
-
   margin-left: 59px;
 }
 
@@ -430,7 +423,6 @@ header {
   transform: rotate(90deg);
 }
 
-/* выпадающее меню */
 .main-catalog:hover .catalog-submenu {
   display: flex;
   flex-wrap: wrap;
@@ -441,11 +433,9 @@ header {
   position: absolute;
   top: 20px;
   left: -59px;
-
   background-color: #f8e297;
   padding-top: 26px;
   padding-bottom: 33px;
-
   z-index: 5;
 }
 
@@ -493,15 +483,13 @@ header {
   margin-right: 58px;
 }
 
-/* Стили мейна */
-/* Стили слайдера */
 .main-slide-container {
   position: relative;
 }
 
 .main-slider-controls {
   position: absolute;
-  top: 326px;
+  bottom: 248px;
   right: 63px;
   z-index: 10;
 }
@@ -569,7 +557,6 @@ header {
   color: #ffffff;
   top: -15px;
   right: 47px;
-
   font-family: Gilroy, Arial, sans-serif;
   font-size: 179px;
   line-height: 179px;
@@ -693,7 +680,6 @@ header {
   font-stretch: normal;
   letter-spacing: 0.1px;
   color: #464646;
-
   order: 2;
 }
 
@@ -707,8 +693,6 @@ header {
   letter-spacing: 0.4px;
   padding-bottom: 8px;
 }
-
-/* Стили популярных товаров */
 
 .popular-list {
   display: flex;
@@ -727,8 +711,7 @@ header {
 .popular-list p {
   margin: 0;
   width: 160px;
-
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -777,7 +760,6 @@ header {
   opacity: 0.3;
 }
 
-/* Стили фьючеров */
 .features-container {
   background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
   margin-bottom: 94px;
@@ -906,7 +888,6 @@ header {
   margin: 0px;
 }
 
-/* Стили поставщиков */
 .contractors {
   margin-bottom: 89px;
 }
@@ -947,7 +928,6 @@ header {
   filter: none;
 }
 
-/* Стили секции о нас */
 .about-us-contacts-container {
   margin-bottom: 82px;
 }
@@ -983,7 +963,6 @@ header {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-
   margin-top: 0px;
   margin-bottom: 30px;
 }
@@ -1001,7 +980,6 @@ header {
   padding-top: 34px;
   padding-left: 35px;
   margin-bottom: 54px;
-
   font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
@@ -1029,7 +1007,6 @@ header {
   width: 260px;
 }
 
-/* Стили секции Контакты */
 .contacts {
   position: relative;
   vertical-align: top;
@@ -1050,18 +1027,11 @@ header {
   width: 265px;
 }
 
-/* Стили футера */
-footer {
+.main-footer {
   background-color: #464646;
   color: #ffffff;
 }
 
-.footer-container {
-  /* display: flex; */
-  /* justify-content: space-between; */
-}
-
-/* стили левой колонки */
 .footer-top-side {
   position: relative;
   display: flex;
@@ -1072,7 +1042,6 @@ footer {
 
 .footer-logo {
   display: block;
-  cursor: pointer;
   margin-top: 2px;
   margin-bottom: 26px;
 }
@@ -1105,7 +1074,6 @@ footer {
   position: relative;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-
   font-family: OpenSans, Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -1181,7 +1149,6 @@ footer {
   background-position: center top;
 }
 
-/* стили средней части */
 .footer-middle-side {
   display: flex;
   flex-wrap: wrap;
@@ -1196,7 +1163,6 @@ footer {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-
   margin-right: 163px;
 }
 
@@ -1215,7 +1181,6 @@ footer {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-
   font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1223,7 +1188,6 @@ footer {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 3.6px;
-
   margin-right: 33px;
 }
 
@@ -1243,12 +1207,8 @@ footer {
 .footer-phone {
   margin-left: auto;
   margin-top: 0;
-}
-
-.footer-phone a {
   color: #ffffff;
   text-decoration: none;
-
   font-family: OpenSans, Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -1258,7 +1218,6 @@ footer {
   letter-spacing: normal;
 }
 
-/* стили нижней части колонки */
 .footer-bottom-side {
   display: flex;
   flex-wrap: wrap;
@@ -1320,8 +1279,6 @@ footer {
   fill: rgba(255, 198, 0, 0.3);
 }
 
-
-/* Стили CATALOG.HTML */
 .header-user-login-active .header-user-active {
   margin-right: 17px;
   padding-left: 26px;
@@ -1404,8 +1361,7 @@ footer {
   content: "";
   height: 7px;
   width: 4px;
-  background-image: url("../img/navArrow.svg");
-
+  background-image: url("../img/navarrow.svg");
   top: 8px;
   right: 16px;
 }
@@ -1446,7 +1402,7 @@ footer {
 
 .filter-manifest,
 .page-shop-sort-header {
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
@@ -1457,8 +1413,6 @@ footer {
 }
 
 .filter-manifest {
-  display: inline-block;
-  vertical-align: top;
   background-color: #d9d9d9;
   width: 327px;
   margin: 0;
@@ -1468,14 +1422,13 @@ footer {
 }
 
 .page-shop-sort {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-wrap: wrap;
   width: 833px;
   background-color: #ebebeb;
 }
 
 .page-shop-sort-header {
-  display: inline-block;
   margin: 0;
   padding-left: 73px;
   padding-top: 23px;
@@ -1484,20 +1437,24 @@ footer {
 }
 
 .list-sort {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   margin: 0;
   list-style: none;
-  padding-left: 0;
-  padding-right: 197px;
+  width: 400px;
+  padding-left: 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .list-sort-order {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   margin: 0;
   list-style: none;
   padding-left: 0;
+  padding-top: 25px;
+  margin-left: auto;
 }
 
 .list-sort-item {
@@ -1551,7 +1508,6 @@ footer {
   opacity: 1;
 }
 
-/* Стили фильтров */
 .middle-page-shop-container {
   position: relative;
 }
@@ -1567,10 +1523,13 @@ footer {
   z-index: -1;
 }
 
+.filter-shop-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .page-shop-filter {
-  display: inline-block;
-  vertical-align: top;
-  width: 323px;
+  width: 327px;
 }
 
 .filter-form {
@@ -1592,7 +1551,6 @@ footer {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 0.2px;
-
   padding-left: 58px;
 }
 
@@ -1607,7 +1565,6 @@ footer {
   width: 201px;
   height: 2px;
   background-color: #000000;
-
   top: -12px;
   left: 58px;
 }
@@ -1618,7 +1575,6 @@ footer {
   width: 201px;
   height: 2px;
   background-color: #000000;
-
   bottom: -36px;
   left: 58px;
 }
@@ -1682,7 +1638,6 @@ footer {
 
 .filter-price-controls {
   padding-left: 57px;
-
   font-family: Gilroy, Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -1690,7 +1645,6 @@ footer {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -1716,7 +1670,6 @@ footer {
   width: 201px;
   height: 2px;
   background-color: #000000;
-
   bottom: -1px;
   left: 58px;
 }
@@ -1730,7 +1683,6 @@ footer {
 
 .list-filter-color-item {
   padding-left: 96px;
-
   font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
@@ -1749,7 +1701,7 @@ footer {
   content: "";
   width: 23px;
   height: 23px;
-  background-image: url("../img/checkboxOff.png");
+  background-image: url("../img/checkboxoff.png");
   background-repeat: no-repeat;
   background-position: center top;
   left: -40px;
@@ -1758,7 +1710,7 @@ footer {
 
 .list-filter-color-item input:checked+label::before {
   width: 27px;
-  background-image: url("../img/checkboxOn.png");
+  background-image: url("../img/checkboxon.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -1769,13 +1721,13 @@ footer {
 
 .list-filter-color-item:active:not([checked]) label::before {
   opacity: 1;
-  background-image: url("../img/checkboxOn.png");
+  background-image: url("../img/checkboxon.png");
   width: 27px;
 }
 
 .list-filter-color-item:active input:checked+label::before {
   opacity: 1;
-  background-image: url("../img/checkboxOff.png");
+  background-image: url("../img/checkboxoff.png");
   width: 23px;
 }
 
@@ -1799,7 +1751,6 @@ footer {
 .list-filter-bluetooth-item {
   position: relative;
   padding-left: 96px;
-
   font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
@@ -1814,7 +1765,7 @@ footer {
   content: "";
   width: 25px;
   height: 28px;
-  background-image: url("../img/radioOff.png");
+  background-image: url("../img/radiooff.png");
   background-repeat: no-repeat;
   background-position: center top;
   left: 57px;
@@ -1822,7 +1773,7 @@ footer {
 }
 
 .list-filter-bluetooth-item input:checked+label::before {
-  background-image: url("../img/radioOn.png");
+  background-image: url("../img/radioon.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -1833,12 +1784,12 @@ footer {
 
 .list-filter-bluetooth-item:active:not([checked]) label::before {
   opacity: 1;
-  background-image: url("../img/radioOn.png");
+  background-image: url("../img/radioon.png");
 }
 
 .list-filter-bluetooth-item:active input:checked+label::before {
   opacity: 1;
-  background-image: url("../img/radioOff.png");
+  background-image: url("../img/radiooff.png");
 }
 
 .list-filter-bluetooth-item input:disabled+label::before,
@@ -1856,11 +1807,10 @@ footer {
 }
 
 .products-wrapper {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
-  padding-left: 73px;  
+  padding-left: 73px;
   padding-top: 21px;
   padding-bottom: 77px;
 }
@@ -1880,7 +1830,7 @@ footer {
   flex-wrap: wrap;
   align-content: flex-start;
   position: relative;
-  width: 360px;  
+  width: 360px;
   margin-right: 40px;
   margin-top: 48px;
 }
@@ -1893,7 +1843,7 @@ footer {
   line-height: 24px;
   font-weight: 800;
   font-style: normal;
-  font-stretch: normal;  
+  font-stretch: normal;
   letter-spacing: 0.7px;
   text-align: center;
   padding-top: 18px;
@@ -1935,8 +1885,8 @@ footer {
   line-height: 24px;
   font-weight: 800;
   font-style: normal;
-  font-stretch: normal;  
-  letter-spacing: 0.2px;  
+  font-stretch: normal;
+  letter-spacing: 0.2px;
 }
 
 .product-item-price {
@@ -1945,23 +1895,23 @@ footer {
   margin-left: auto;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;;
+  line-height: 24px;
   font-weight: 300;
   font-style: normal;
-  font-stretch: normal;  
+  font-stretch: normal;
   letter-spacing: 0.2px;
   text-align: right;
   color: #464646;
 }
 
 .product-item-hover-container {
-  display: none;  
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 380px;
-  background-color: rgba(238, 238, 238, 0.6);;
+  background-color: rgba(238, 238, 238, 0.6);  
   text-align: center;
   cursor: pointer;
 }
@@ -1986,7 +1936,7 @@ footer {
   line-height: 20px;
   font-weight: 300;
   font-style: normal;
-  font-stretch: normal;  
+  font-stretch: normal;
   letter-spacing: 0.1px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
@@ -2010,7 +1960,7 @@ footer {
   background-color: #ebebeb;
 }
 
-.paginator-item a{
+.paginator-item a {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
@@ -2028,29 +1978,29 @@ footer {
   margin-bottom: 21px;
 }
 
-.paginator-item-direction a{
+.paginator-item-direction a {
   color: rgba(0, 0, 0, 1);
 }
 
-.paginator-item-current a{
-  color: rgba(0, 0, 0, 1);
-}
-
-.paginator-item:hover a,
-.paginator-item:focus a{
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.paginator-item:active a{
+.paginator-item-current a {
   color: rgba(0, 0, 0, 1);
 }
 
 .paginator-item:hover a,
-.paginator-item:focus a{
+.paginator-item:focus a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.paginator-item:active a{
+.paginator-item:active a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.paginator-item:hover a,
+.paginator-item:focus a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.paginator-item:active a {
   color: rgba(0, 0, 0, 1);
 }
 
@@ -2084,7 +2034,7 @@ footer {
 }
 
 .paginator-item-direction:active a {
-  color: rgba(0, 0, 0, 0.3);;
+  color: rgba(0, 0, 0, 0.3);  
 }
 
 .footer-user-login-active .footer-user-active {
@@ -2110,8 +2060,6 @@ footer {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* модальные окна */
-/* модальное окно обратной связи */
 .overlay-modal-feedback {
   display: none;
   position: fixed;
@@ -2170,9 +2118,7 @@ footer {
   padding-left: 20px;
   border: none;
   background-color: #f2f2f2;
-
   font-family: OpenSans, Arial, sans-serif;
-  ;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -2180,7 +2126,6 @@ footer {
   font-stretch: normal;
   letter-spacing: normal;
   color: #464646;
-
   margin-top: 5px;
 }
 
@@ -2255,7 +2200,7 @@ footer {
   font-size: 0;
   width: 55px;
   height: 55px;
-  background-image: url("../img/modalClose.svg");
+  background-image: url("../img/modalclose.svg");
   opacity: 0.5;
   right: 23px;
   top: 22px;
@@ -2271,7 +2216,6 @@ footer {
   opacity: 0.3;
 }
 
-/* модальное окно карты */
 .overlay-modal-map {
   display: none;
   position: fixed;
@@ -2315,7 +2259,7 @@ footer {
   font-size: 0;
   width: 55px;
   height: 55px;
-  background-image: url("../img/modalClose.svg");
+  background-image: url("../img/modalclose.svg");
   opacity: 0.5;
   right: 23px;
   top: 52px;
