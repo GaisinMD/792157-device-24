@@ -1541,7 +1541,6 @@ footer {
   opacity: 1;
 }
 
-
 /* Стили фильтров */
 .middle-page-shop-container {
   position: relative;
@@ -1852,7 +1851,8 @@ footer {
   text-align: left;
   background-color: #ffffff;
   padding-left: 73px;  
-  padding-top: 69px;
+  padding-top: 21px;
+  padding-bottom: 77px;
 }
 
 .list-products {
@@ -1862,7 +1862,7 @@ footer {
   padding: 0;
   margin: 0;
   width: 760px;
-  margin-bottom: 41px;
+  margin-bottom: 34px;
 }
 
 .product-item {
@@ -1872,7 +1872,7 @@ footer {
   position: relative;
   width: 360px;  
   margin-right: 40px;
-  margin-bottom: 48px;
+  margin-top: 48px;
 }
 
 .product-item-new::after {
@@ -1944,18 +1944,161 @@ footer {
   color: #464646;
 }
 
-
 .product-item-hover-container {
-  display: none;
+  display: none;  
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 380px;
+  background-color: rgba(238, 238, 238, 0.6);;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-item:hover .product-item-hover-container {
+  display: block;
+}
+
+.product-item-button {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 172px;
+  background-image: linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+  margin-bottom: 15px;
+}
+
+.product-item-link-compare {
+  text-decoration: none;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;  
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.product-item-link-compare:hover,
+.product-item-link-compare:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.product-item-link-compare:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .product-paginator-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   background-color: #ebebeb;
 }
 
+.paginator-item a{
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-top: 24px;
+  margin-bottom: 21px;
+}
+
+.paginator-item-direction a{
+  color: rgba(0, 0, 0, 1);
+}
+
+.paginator-item-current a{
+  color: rgba(0, 0, 0, 1);
+}
+
+.paginator-item:hover a,
+.paginator-item:focus a{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.paginator-item:active a{
+  color: rgba(0, 0, 0, 1);
+}
+
+.paginator-item:hover a,
+.paginator-item:focus a{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.paginator-item:active a{
+  color: rgba(0, 0, 0, 1);
+}
+
+.paginator-item {
+  margin-left: 20px;
+  margin-right: 9px
+}
+
+.paginator-item-direction-back {
+  min-width: 136px;
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.paginator-item-direction-back a {
+  padding-left: 28px;
+}
+
+.paginator-item-direction-forward {
+  min-width: 136px;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.paginator-item-direction-forward a {
+  text-align: center;
+}
+
+.paginator-item-direction:hover {
+  background-color: #d9d9d9;
+}
+
+.paginator-item-direction:active a {
+  color: rgba(0, 0, 0, 0.3);;
+}
+
+.footer-user-login-active .footer-user-active {
+  margin-right: 17px;
+  padding-left: 26px;
+  letter-spacing: 0.15px;
+}
+
+.footer-user-login-active .footer-user-active::before {
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 12px;
+  top: 3px;
+  left: 2px;
+  background-image: url("../img/user-marygold.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.footer-user-login-active .footer-user-logoff {
+  margin-right: 64px;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /* модальные окна */
 /* модальное окно обратной связи */

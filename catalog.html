@@ -259,11 +259,11 @@
             <!-- Пагинатор -->
             <div class="paginator-wrapper">
               <ul class="product-paginator-list">
-                <li class="paginator-item"><a>Назад</a></li>
+                <li class="paginator-item paginator-item-direction paginator-item-direction-back"><a>Назад</a></li>
                 <li class="paginator-item paginator-item-current"><a>1</a></li>
                 <li class="paginator-item"><a href="#">2</a></li>
                 <li class="paginator-item"><a href="#">3</a></li>
-                <li class="paginator-item"><a href="#">Вперед</a></li>
+                <li class="paginator-item paginator-item-direction paginator-item-direction-forward"><a href="#">Вперед</a></li>
               </ul>
             </div>
           </section>
@@ -351,7 +351,10 @@
       <!-- Правая часть футера -->
       <div class="footer-right-side">
         <ul class="footer-menu-user">
-          <li class="footer-user footer-user-login"><a href="#">Войти</a></li>
+          <li class="footer-user footer-user-login-active">
+            <a class="footer-user-active" href="#">Валентин Петухов</a>
+            <a class="footer-user-logoff" href="#">Выйти</a>
+          </li>          
           <li class="footer-user footer-user-compare"><a href="#">Сравнить</a></li>
           <li class="footer-user footer-user-basket"><a href="">Корзина</a></li>
         </ul>
