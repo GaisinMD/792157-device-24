@@ -262,7 +262,7 @@ body {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  margin-bottom: 38px;
+  margin-bottom: 38px;  
 }
 
 .main-logo {
@@ -272,6 +272,7 @@ body {
   padding-top: 21px;
   margin-left: 59px;
   margin-bottom: 27px;
+  font-size: 0;
 }
 
 .main-logo[href="index.html"] {
@@ -1088,6 +1089,7 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
+  font-size: 0;
 }
 
 .contractors-item-image {
@@ -1227,6 +1229,7 @@ body {
   display: block;
   margin-top: 2px;
   margin-bottom: 26px;
+  font-size: 0;
 }
 
 .footer-logo path {
@@ -1447,6 +1450,10 @@ body {
   padding-right: 23px;
 }
 
+.footer-social-item-link {
+  font-size: 0;
+}
+
 .footer-social-item-link:hover path,
 .footer-social-item-link:hover rect,
 .footer-social-item-link:focus path,
@@ -1462,6 +1469,10 @@ body {
 .html-academy-logo-container {
   margin-top: 0px;
   margin-left: auto;
+}
+
+.html-academy-logo {
+  font-size: 0;
 }
 
 .html-academy-logo path {
@@ -1930,20 +1941,13 @@ body {
   background-position: center top;
 }
 
-.list-filter-color-item:hover label::before {
+.list-filter-color-item:hover label::before,
+.list-filter-color-item-input:focus+label::before {
   opacity: 0.6;
 }
 
-.list-filter-color-item:active:not([checked]) label::before {
+.list-filter-color-item:active label::before {
   opacity: 1;
-  background-image: url("../img/checkboxon.png");
-  width: 27px;
-}
-
-.list-filter-color-item:active input:checked+label::before {
-  opacity: 1;
-  background-image: url("../img/checkboxoff.png");
-  width: 23px;
 }
 
 .list-filter-color-item input:disabled+label::before,
@@ -1993,18 +1997,13 @@ body {
   background-position: center top;
 }
 
-.list-filter-bluetooth-item:hover label::before {
+.list-filter-bluetooth-item:hover label::before,
+.list-filter-bluetooth-item-item:focus+label::before {
   opacity: 0.6;
 }
 
-.list-filter-bluetooth-item:active:not([checked]) label::before {
+.list-filter-bluetooth-item:active label::before {
   opacity: 1;
-  background-image: url("../img/radioon.png");
-}
-
-.list-filter-bluetooth-item:active input:checked+label::before {
-  opacity: 1;
-  background-image: url("../img/radiooff.png");
 }
 
 .list-filter-bluetooth-item input:disabled+label::before,
