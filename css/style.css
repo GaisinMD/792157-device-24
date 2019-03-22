@@ -2245,7 +2245,7 @@ body {
   animation: bounce 0.5s ease;  
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: url("../img/mapDevice.jpeg");
+  background-image: url("../img/mapdevice.jpeg");
 }
 
 .modal-map iframe {
